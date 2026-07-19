@@ -1,78 +1,64 @@
 # 📊 Enterprise Customer Churn Intelligence Platform
 
-An end-to-end Customer Churn Analytics and Machine Learning project that predicts customer churn using XGBoost and provides business insights through an interactive Power BI Dashboard and Streamlit Web Application.
+An end-to-end Machine Learning project that predicts whether an Ecommerce customer is likely to churn. The project combines Data Analysis, Machine Learning, Power BI Dashboarding, and Streamlit deployment to provide business-ready insights and recommendations.
 
 ---
 
 # 🚀 Project Overview
 
-Customer churn is one of the biggest challenges faced by e-commerce businesses. This project helps organizations identify customers who are likely to leave and provides actionable business recommendations to improve customer retention.
+Customer churn is one of the biggest challenges for Ecommerce companies.
 
-The project covers the complete Data Science lifecycle:
+This project predicts customer churn using an XGBoost Machine Learning model and provides business recommendations to help improve customer retention.
 
-- Business Problem Understanding
-- Data Cleaning
-- Exploratory Data Analysis (EDA)
-- Feature Engineering
-- Machine Learning Model Development
-- Model Evaluation
-- Power BI Dashboard
-- Streamlit Web Application
-- Business Recommendation System
+The project covers the complete Data Science lifecycle from data preprocessing to dashboard visualization and deployment.
 
 ---
 
-# 🎯 Business Objective
+# 🎯 Objectives
 
-The objective of this project is to:
-
-- Predict customers who are likely to churn
-- Understand key churn drivers
-- Help businesses improve customer retention
-- Support management with data-driven decisions
+- Predict customer churn accurately
+- Identify high-risk customers
+- Provide actionable business recommendations
+- Visualize business insights using Power BI
+- Deploy an interactive prediction application using Streamlit
 
 ---
 
-# 🛠️ Technologies Used
+# 🛠 Technology Stack
 
-## Programming
+### Programming
 
-- Python
+- Python 3.13
+- SQL
+- Git & GitHub
 
-## Data Analysis
+### Libraries
 
 - Pandas
 - NumPy
-
-## Data Visualization
-
 - Matplotlib
 - Seaborn
-- Power BI
-
-## Machine Learning
-
 - Scikit-Learn
 - XGBoost
-
-## Deployment
-
-- Streamlit
 - Joblib
+- Streamlit
 
-## Development Tools
+### Visualization
 
-- Jupyter Notebook
+- Power BI
+
+### Development Tools
+
 - VS Code
-- Git
-- GitHub
+- Jupyter Notebook
 
 ---
 
 # 📂 Project Structure
 
-```text
-Customer_Churn_Intelligence/
+```
+Enterprise-Customer-Churn-Intelligence-Platform/
+
 │
 ├── app/
 │
@@ -84,168 +70,184 @@ Customer_Churn_Intelligence/
 ├── notebooks/
 │
 ├── screenshots/
-│
-├── reports/
+│     ├── app_home.png
+│     ├── prediction_result.png
+│     └── powerbi_dashboard.png
 │
 ├── streamlit_app.py
-│
 ├── requirements.txt
-│
 ├── README.md
-│
-├── .gitignore
-│
 └── LICENSE
 ```
 
 ---
 
-# 📊 Exploratory Data Analysis (EDA)
+# ⚙ Machine Learning Workflow
 
-The following analyses were performed:
+### 1. Business Understanding
 
-- Missing Value Analysis
-- Outlier Detection
-- Data Cleaning
-- Feature Distribution
+- Understand customer churn problem
+- Define business objective
+
+### 2. Data Collection
+
+- Ecommerce Customer Dataset
+
+### 3. Data Cleaning
+
+- Missing Value Treatment
+- Duplicate Removal
+- Data Type Correction
+
+### 4. Exploratory Data Analysis (EDA)
+
+- Univariate Analysis
+- Bivariate Analysis
 - Correlation Analysis
-- Customer Behaviour Analysis
-- Product Category Analysis
-- Satisfaction Analysis
-- Cashback Analysis
+- Churn Distribution
 - Complaint Analysis
-- Business Insight Generation
 
----
+### 5. Feature Engineering
 
-# ⚙️ Feature Engineering
+Created new features:
 
-Created the following engineered features:
+- CustomerLifetime
+- DistanceBucket
+- ComplaintLabel
 
-- Customer Lifetime
-- Distance Bucket
-- Complaint Label
+### 6. Data Preprocessing
 
-Applied:
-
-- One-Hot Encoding
+- One Hot Encoding
 - Feature Scaling
-- StandardScaler
+- Train-Test Split
 
----
+### 7. Machine Learning
 
-# 🤖 Machine Learning
-
-## Models Evaluated
+Models Tested:
 
 - Logistic Regression
-- Balanced Logistic Regression
 - Random Forest
-- XGBoost
+- XGBoost (Final Model)
 
-## Final Selected Model
+### 8. Model Evaluation
 
-**XGBoost Classifier**
-
-Reasons:
-
-- Highest Accuracy
-- Better Precision
-- Better Recall
-- Better F1 Score
-- Better Generalization
-
----
-
-# 📈 Model Evaluation
-
-Evaluation Metrics Used:
+Metrics Used:
 
 - Accuracy
 - Precision
 - Recall
 - F1 Score
 - Confusion Matrix
-- Feature Importance
 
 ---
 
-# 📊 Power BI Dashboard
+# 🧠 Final Model
 
-A professional interactive Power BI dashboard was developed for business users.
+Model Used:
 
-Dashboard includes:
+**XGBoost Classifier**
 
-- Executive Dashboard
-- Customer Overview
-- Root Cause Analysis
-- Machine Learning Insights
-- KPI Cards
-- Interactive Filters
-- Business Recommendations
+Performance:
+
+- Accuracy: **95.2%**
+- Precision: Excellent
+- Recall: Excellent
+- F1 Score: High
 
 ---
 
-# 🌐 Streamlit Web Application
+# 💻 Streamlit Application
 
-The Streamlit application provides:
+Features
 
-- Customer Data Input Form
-- Churn Prediction
+- Interactive UI
+- Real-time Prediction
 - Churn Probability
-- Risk Classification
-- AI Business Recommendation
+- Risk Level
+- AI Action Plan
+- Business Recommendations
+- Key Insights
 - Model Information
 
 ---
 
-# 🎯 Project Workflow
+# 📈 Power BI Dashboard
 
-1. Business Understanding
-2. Data Collection
-3. Data Cleaning
-4. Exploratory Data Analysis
-5. Feature Engineering
-6. Model Training
-7. Model Evaluation
-8. Power BI Dashboard
-9. Streamlit Deployment
-10. Business Recommendation System
+Dashboard includes:
 
----
-
-# 📈 Business Value
-
-This solution helps organizations to:
-
-- Reduce Customer Churn
-- Improve Customer Retention
-- Optimize Marketing Campaigns
-- Improve Customer Satisfaction
-- Increase Business Revenue
-- Support Strategic Decision Making
+- KPI Cards
+- Churn Distribution
+- Complaint Analysis
+- Satisfaction Analysis
+- Cashback Analysis
+- Warehouse Distance Analysis
+- Customer Segmentation
+- Interactive Filters
+- Executive Business Dashboard
 
 ---
 
-# 🚀 How to Run
+# 📸 Project Screenshots
 
-## Clone Repository
+## 🏠 Streamlit Application
+
+![Application Home](screenshots/app_home.png)
+
+Interactive interface for entering customer details and performing churn prediction.
+
+---
+
+## 🤖 Prediction Result
+
+![Prediction Result](screenshots/prediction_result.png)
+
+Displays:
+
+- Prediction
+- Churn Probability
+- Risk Level
+- AI Recommendations
+- Business Insights
+- Model Information
+
+---
+
+## 📊 Power BI Dashboard
+
+![Power BI Dashboard](screenshots/powerbi_dashboard.png)
+
+Executive dashboard showing:
+
+- Customer Churn KPIs
+- Complaint Analysis
+- Customer Segmentation
+- Satisfaction Trends
+- Cashback Analysis
+- Business Insights
+
+---
+
+# 📦 Installation
+
+Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/Customer-Churn-Intelligence.git
+git clone https://github.com/ranjanthedatascientist98-cr/Enterprise-Customer-Churn-Intelligence-Platform.git
 ```
 
----
+Move into project folder
 
-## Install Dependencies
+```bash
+cd Enterprise-Customer-Churn-Intelligence-Platform
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## Run Streamlit
+Run Streamlit
 
 ```bash
 streamlit run streamlit_app.py
@@ -253,27 +255,33 @@ streamlit run streamlit_app.py
 
 ---
 
-# 📷 Project Screenshots
+# 📌 Future Improvements
 
-Include screenshots of:
-
-- Power BI Dashboard
-- Streamlit Application
-- Prediction Result
-- Root Cause Analysis
-- Machine Learning Insights
+- FastAPI Deployment
+- Docker Containerization
+- Cloud Deployment (AWS/Azure)
+- User Authentication
+- Database Integration
+- Customer Management Portal
 
 ---
 
-# 📌 Future Improvements
+# 📖 Skills Demonstrated
 
-- Batch Prediction using CSV Upload
-- SHAP Explainability
-- Customer Segmentation
-- Model Monitoring
-- Cloud Deployment
-- REST API Integration
-- Database Connectivity
+- Python
+- SQL
+- Data Cleaning
+- EDA
+- Feature Engineering
+- Statistics
+- Machine Learning
+- XGBoost
+- Model Evaluation
+- Streamlit
+- Power BI
+- Git
+- GitHub
+- Business Intelligence
 
 ---
 
@@ -281,10 +289,16 @@ Include screenshots of:
 
 **Chittaranjan Mohapatra**
 
-Aspiring Data Analyst | Machine Learning Enthusiast | Power BI Developer
+Aspiring Data Analyst | Data Scientist | Machine Learning Enthusiast
+
+GitHub:
+
+https://github.com/ranjanthedatascientist98-cr
+
+LinkedIn:
+
+(Add your LinkedIn profile here)
 
 ---
 
-# ⭐ If you like this project
-
-Please consider giving this repository a ⭐ on GitHub.
+# ⭐ If you found this project helpful, please consider giving it a Star.
