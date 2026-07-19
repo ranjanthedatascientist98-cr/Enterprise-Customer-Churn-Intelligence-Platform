@@ -1,0 +1,5 @@
+Model,Accuracy,Precision,Recall,F1 Score
+Logistic Regression,0.8758,0.7126,0.4593,0.5586
+Balanced Logistic,0.8124,0.4726,0.8296,0.6022
+Random Forest,0.9392,0.8175,0.8296,0.8235
+XGBoost,0.9455,0.8966,0.7704,0.8287

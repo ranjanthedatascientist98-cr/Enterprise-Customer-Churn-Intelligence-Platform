@@ -1,0 +1,19 @@
+Feature,Importance
+Tenure,0.2686273948252799
+CashbackAmount,0.13904875058801627
+WarehouseToHome,0.07811675341896748
+Complain,0.07208499673300194
+NumberOfAddress,0.0686282704959525
+DaySinceLastOrder,0.06806637491790189
+SatisfactionScore,0.06197114649164436
+PreferedOrderCat_Mobile,0.039573313273798746
+NumberOfDeviceRegistered,0.0382960859807445
+CustomerLifetime_Regular,0.034010328161824005
+MaritalStatus_Single,0.029778519922601106
+CustomerLifetime_Loyal,0.024987724014483913
+PreferedOrderCat_Laptop & Accessory,0.024927431921330175
+MaritalStatus_Married,0.020435679321877075
+DistanceBucket_Medium,0.013613898708071327
+DistanceBucket_Far,0.009493779751928324
+PreferedOrderCat_Grocery,0.0043095655462994575
+PreferedOrderCat_Others,0.004029985926277002
